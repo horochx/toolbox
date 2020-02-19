@@ -1,0 +1,33 @@
+{
+  "name": "scaffold4webpack",
+  "version": "1.0.0",
+  "description": "A self-use scaffold for webpack.",
+  "main": "./lib/main.js",
+  "bin": {
+    "s4w": "./lib/main.js"
+  },
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "build": "tsc -p ."
+  },
+  "keywords": [
+    "scaffold",
+    "webpack"
+  ],
+  "author": "horochx",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "clear": "^0.1.0",
+    "commander": "^4.1.1",
+    "figlet": "^1.2.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/clear": "^0.1.0",
+    "@types/figlet": "^1.2.0",
+    "@types/node": "^13.7.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
