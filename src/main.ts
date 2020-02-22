@@ -30,16 +30,16 @@ program
   .command('init [appName]')
   .description('Init webpack.')
   .action((appName: string) => {
-    console.log(`appName is: ${appName}`)
+    console.log(`This feature is work in process`)
   })
 
 program
   .command('swagger2ts')
-  .description('Converting swagger to typescript.')
+  .description('Convert swagger to typescript.')
   .option('-s --source <uri>', 'swagger.json file path or url')
-  .option('-t --target <filePath>', 'typescript file path')
-  .action(({ source, target = 'types' }: Record<string, string>) => {
-    swagger2ts(source, target)
+  .option('-o --outDir <dirPath>', 'directory where typescript will be output')
+  .action(({ source, outDir = 'swagger2tsOutDir' }: Record<string, string>) => {
+    swagger2ts(source, outDir)
   })
 
 program.parse(process.argv)
