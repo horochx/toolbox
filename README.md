@@ -7,7 +7,7 @@ A self-use CLI toolbox.
 git clone https://github.com/horochx/toolbox.git
 cd toolbox
 npm i
-npm build
+npm run build
 npm link
 ```
 
