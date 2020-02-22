@@ -14,7 +14,7 @@ clear()
 
 console.log(
   chalk.cyan(
-    figlet.textSync(Object.keys(pkg.bin)[0], {
+    figlet.textSync(pkg.name, {
       horizontalLayout: 'full',
     })
   )
@@ -28,15 +28,15 @@ program
 
 program
   .command('init [appName]')
-  .description('Init webpack.')
+  .description('init webpack project')
   .action((appName: string) => {
-    console.log(`This feature is work in process`)
+    console.log(`This feature is work in process.`)
   })
 
 program
   .command('swagger2ts')
-  .description('Convert swagger to typescript.')
-  .option('-s --source <uri>', 'swagger.json file path or url')
+  .description('convert swagger to typescript')
+  .requiredOption('-s --source <uri>', 'swagger.json file path or url')
   .option('-o --outDir <dirPath>', 'directory where typescript will be output')
   .action(({ source, outDir = 'swagger2tsOutDir' }: Record<string, string>) => {
     swagger2ts(source, outDir)

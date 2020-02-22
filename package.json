@@ -1,19 +1,15 @@
 {
-  "name": "scaffold4webpack",
-  "version": "1.0.0",
-  "description": "A self-use scaffold for webpack.",
+  "name": "toolbox",
+  "version": "0.1.0",
+  "description": "A self-use CLI toolbox.",
   "main": "./lib/main.js",
   "bin": {
-    "s4w": "./lib/main.js"
+    "tb": "./lib/main.js"
   },
   "scripts": {
     "start": "ts-node src/main.ts -h",
     "build": "tsc -p ."
   },
-  "keywords": [
-    "scaffold",
-    "webpack"
-  ],
   "author": "horochx",
   "license": "MIT",
   "dependencies": {
