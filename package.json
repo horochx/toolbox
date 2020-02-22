@@ -7,7 +7,7 @@
     "s4w": "./lib/main.js"
   },
   "scripts": {
-    "start": "ts-node src/main.ts",
+    "start": "ts-node src/main.ts -h",
     "build": "tsc -p ."
   },
   "keywords": [
